@@ -1,0 +1,29 @@
+name = "killergg/jecs_handle"
+version = "0.1.0"
+description = "A jecs handle for easy world editing"
+authors = ["Ukendio"]
+repository = "https://github.com/NeonD00m/jecs_std"
+license = "MIT"
+
+[target]
+environment = "roblox"
+lib = "./handle.luau"
+build_files = ["."]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
+
+[dependencies]
+jecs = { wally = "wally#ukendio/jecs", version = "^0.5.3" }
+world = { name = "killergg/jecs_world", version = "^0.1.0" }
