@@ -1,7 +1,7 @@
 --!strict
 --!optimize 2
 
-local jecs = require("./roblox_packages/Jecs")
+local jecs = require("./roblox_packages/jecs")
 type entity<T = nil> = jecs.Entity<T>
 type id<T = nil> = entity<T> | jecs.Pair<any, any>
 

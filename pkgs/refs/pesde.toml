@@ -1,14 +1,14 @@
-name = "killergg/jecs_handle"
+name = "killergg/jecs_refs"
 version = "0.1.0"
-description = "A jecs handle for easy world editing"
-authors = ["Ukendio"]
+description = "A table of refs to be used by jecs packages"
+authors = ["NeonD00m"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
 [target]
 environment = "roblox"
-lib = "./handle.luau"
-build_files = ["."]
+lib = "src/init.luau"
+build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
@@ -24,6 +24,3 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
-[dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.3" }
-world = { name = "killergg/jecs_world", version = "^0.1.0" }

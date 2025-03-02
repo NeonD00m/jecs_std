@@ -1,14 +1,14 @@
-name = "killergg/jecs_world"
-version = "0.1.0"
-description = "A jecs world made easily available for dependencies"
-authors = ["NeonD00m", "As8d"]
+name = "killergg/jecs_reverse_ref"
+version = "0.1.1"
+description = "Go from world entity to ref with this package"
+authors = ["as8d"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
 [target]
 environment = "roblox"
-lib = "./world.luau"
-build_files = ["."]
+lib = "src/init.luau"
+build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
@@ -25,4 +25,4 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.3" }
+refs = { workspace = "killergg/jecs_refs", version = "^"  }

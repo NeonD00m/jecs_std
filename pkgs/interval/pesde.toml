@@ -1,14 +1,14 @@
-name = "killergg/jecs_ref"
+name = "killergg/jecs_interval"
 version = "0.1.0"
-description = "A jecs ref for easy entity-mapping and world editing"
+description = "An interval constructor"
 authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
 [target]
 environment = "roblox"
-lib = "./ref.luau"
-build_files = ["."]
+lib = "src/init.luau"
+build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
@@ -23,7 +23,3 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 [dev_dependencies]
 scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
-
-[dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.3" }
-handle = { name = "killergg/jecs_handle", version = "^0.1.0" }

@@ -3,7 +3,7 @@
 
 local handle = require("./roblox_packages/handle")
 local world = require("./roblox_packages/world")
-local refs = {}
+local refs = require("./roblox_packages/refs")
 
 local function ref(key)
     if not key then

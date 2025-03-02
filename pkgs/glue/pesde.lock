@@ -1,5 +1,5 @@
-name = "killergg/jecs_world"
-version = "0.1.0"
+name = "killergg/jecs_std"
+version = "0.1.1"
 target = "roblox"
 
 [graph."0x5eal/unzip"."0.1.3 luau"]
@@ -136,6 +136,181 @@ luau_path = [{ name = "jiwonz/luau_path", version = "^0.1.1", index = "https://g
 [graph."jiwonz/pathfs"."0.3.2 lune".pkg_ref.target]
 environment = "lune"
 lib = "src/lib/init.luau"
+
+[graph."killergg/jecs_handle"."0.1.0 roblox"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_handle"."0.1.0 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_handle"."0.1.0 roblox".dependencies]
+"killergg/jecs_world" = ["0.1.1 roblox", "world"]
+"wally#ukendio/jecs" = ["0.5.5 roblox", "jecs"]
+
+[graph."killergg/jecs_handle"."0.1.0 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/handle"
+
+[graph."killergg/jecs_handle"."0.1.0 roblox".pkg_ref.dependencies]
+jecs = [{ wally = "wally#ukendio/jecs", version = "^0.5.5", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+world = [{ workspace = "killergg/jecs_world", version = "^0.1.0" }, "standard"]
+
+[graph."killergg/jecs_handle"."0.1.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_interval"."0.1.0 roblox"]
+direct = ["interval", { workspace = "killergg/jecs_interval", version = "^", target = "roblox" }, "standard"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_interval"."0.1.0 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_interval"."0.1.0 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/interval"
+
+[graph."killergg/jecs_interval"."0.1.0 roblox".pkg_ref.dependencies]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."killergg/jecs_interval"."0.1.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_ref"."0.1.0 roblox"]
+direct = ["ref", { workspace = "killergg/jecs_ref", version = "^", target = "roblox" }, "standard"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_ref"."0.1.0 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_ref"."0.1.0 roblox".dependencies]
+"killergg/jecs_handle" = ["0.1.0 roblox", "handle"]
+"killergg/jecs_refs" = ["0.1.0 roblox", "refs"]
+"killergg/jecs_world" = ["0.1.1 roblox", "world"]
+"wally#ukendio/jecs" = ["0.5.5 roblox", "jecs"]
+
+[graph."killergg/jecs_ref"."0.1.0 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/ref"
+
+[graph."killergg/jecs_ref"."0.1.0 roblox".pkg_ref.dependencies]
+handle = [{ workspace = "killergg/jecs_handle", version = "^" }, "standard"]
+jecs = [{ wally = "wally#ukendio/jecs", version = "^0.5.3", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
+refs = [{ workspace = "killergg/jecs_refs", version = "^" }, "standard"]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+world = [{ workspace = "killergg/jecs_world", version = "^" }, "standard"]
+
+[graph."killergg/jecs_ref"."0.1.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_refs"."0.1.0 roblox"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_refs"."0.1.0 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/refs"
+
+[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref.dependencies]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox"]
+direct = ["reverseRef", { workspace = "killergg/jecs_reverse_ref", version = "^", target = "roblox" }, "standard"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox".dependencies]
+"killergg/jecs_refs" = ["0.1.0 roblox", "refs"]
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/reverseRef"
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox".pkg_ref.dependencies]
+refs = [{ workspace = "killergg/jecs_refs", version = "^" }, "standard"]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."killergg/jecs_reverse_ref"."0.1.1 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_throttle"."0.1.0 roblox"]
+direct = ["throttle", { workspace = "killergg/jecs_throttle", version = "^", target = "roblox" }, "standard"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_throttle"."0.1.0 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_throttle"."0.1.0 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/throttle"
+
+[graph."killergg/jecs_throttle"."0.1.0 roblox".pkg_ref.dependencies]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."killergg/jecs_throttle"."0.1.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_world"."0.1.1 roblox"]
+resolved_ty = "standard"
+
+[graph."killergg/jecs_world"."0.1.1 roblox".target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[graph."killergg/jecs_world"."0.1.1 roblox".dependencies]
+"wally#ukendio/jecs" = ["0.5.5 roblox", "jecs"]
+
+[graph."killergg/jecs_world"."0.1.1 roblox".pkg_ref]
+ref_ty = "workspace"
+path = "pkgs/world"
+
+[graph."killergg/jecs_world"."0.1.1 roblox".pkg_ref.dependencies]
+jecs = [{ wally = "wally#ukendio/jecs", version = "^0.5.5", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
+rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
+
+[graph."killergg/jecs_world"."0.1.1 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
 
 [graph."lukadev_0/option"."1.2.0 lune"]
 resolved_ty = "standard"
@@ -286,7 +461,7 @@ environment = "lune"
 lib = "src/init.luau"
 
 [graph."wally#ukendio/jecs"."0.5.5 roblox"]
-direct = ["jecs", { wally = "wally#ukendio/jecs", version = "^0.5.3" }, "standard"]
+direct = ["jecs", { wally = "wally#ukendio/jecs", version = "^0.5.5" }, "standard"]
 resolved_ty = "standard"
 
 [graph."wally#ukendio/jecs"."0.5.5 roblox".target]
