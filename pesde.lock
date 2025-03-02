@@ -2,6 +2,9 @@ name = "killergg/jecs_std"
 version = "0.1.0"
 target = "roblox"
 
+[workspace."killergg/jecs_collect"]
+roblox = "pkgs/collect"
+
 [workspace."killergg/jecs_handle"]
 roblox = "pkgs/handle"
 
@@ -16,6 +19,9 @@ roblox = "pkgs/refs"
 
 [workspace."killergg/jecs_reverse_ref"]
 roblox = "pkgs/reverseRef"
+
+[workspace."killergg/jecs_std"]
+roblox = "pkgs/glue"
 
 [workspace."killergg/jecs_throttle"]
 roblox = "pkgs/throttle"

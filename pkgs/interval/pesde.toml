@@ -1,6 +1,6 @@
 name = "killergg/jecs_interval"
-version = "0.1.0"
-description = "An interval constructor"
+version = "0.1.1"
+description = "Throttling for systems running on a per frame basis"
 authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"

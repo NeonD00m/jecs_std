@@ -1,7 +1,7 @@
-name = "killergg/jecs_handle"
-version = "0.1.2"
-description = "Builder pattern for spawning entities in jecs"
-authors = ["Ukendio"]
+name = "killergg/jecs_collect"
+version = "0.1.1"
+description = "Event collection for systems running on a per frame basis"
+authors = ["memorycode", "Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
@@ -23,7 +23,3 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 [dev_dependencies]
 scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
-
-[dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.5" }
-world = { workspace = "killergg/jecs_world", version = "^0.1.0" }

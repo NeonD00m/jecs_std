@@ -1,5 +1,5 @@
-name = "killergg/jecs_reverse_ref"
-version = "0.1.2"
+name = "killergg/jecs_collect"
+version = "0.1.1"
 target = "roblox"
 
 [graph."0x5eal/unzip"."0.1.3 luau"]
@@ -136,28 +136,6 @@ luau_path = [{ name = "jiwonz/luau_path", version = "^0.1.1", index = "https://g
 [graph."jiwonz/pathfs"."0.3.2 lune".pkg_ref.target]
 environment = "lune"
 lib = "src/lib/init.luau"
-
-[graph."killergg/jecs_refs"."0.1.0 roblox"]
-direct = ["refs", { workspace = "killergg/jecs_refs", version = "^" }, "standard"]
-resolved_ty = "standard"
-
-[graph."killergg/jecs_refs"."0.1.0 roblox".target]
-environment = "roblox"
-lib = "src/init.luau"
-build_files = ["src"]
-
-[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref]
-ref_ty = "workspace"
-path = "pkgs/refs"
-
-[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref.dependencies]
-rojo = [{ name = "pesde/rojo", version = "^7.4.4", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
-scripts = [{ name = "pesde/scripts_rojo", version = "^0.1.0", index = "https://github.com/pesde-pkg/index", target = "lune" }, "dev"]
-
-[graph."killergg/jecs_refs"."0.1.0 roblox".pkg_ref.target]
-environment = "roblox"
-lib = "src/init.luau"
-build_files = ["src"]
 
 [graph."lukadev_0/option"."1.2.0 lune"]
 resolved_ty = "standard"

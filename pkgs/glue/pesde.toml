@@ -1,5 +1,5 @@
 name = "killergg/jecs_std"
-version = "0.1.1"
+version = "0.1.2"
 description = "A standard library for jecs"
 authors = ["NeonD00m", "as8d", "Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
@@ -30,3 +30,4 @@ ref = { workspace = "killergg/jecs_ref", version = "^", target = "roblox" }
 reverseRef = { workspace = "killergg/jecs_reverse_ref", version = "^", target = "roblox" }
 throttle = { workspace = "killergg/jecs_throttle", version = "^", target = "roblox" }
 interval = { workspace = "killergg/jecs_interval", version = "^", target = "roblox" }
+collect = { workspace = "killergg/jecs_collect", version = "^", target = "roblox" }

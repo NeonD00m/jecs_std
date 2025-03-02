@@ -1,5 +1,5 @@
 name = "killergg/jecs_throttle"
-version = "0.1.0"
+version = "0.1.1"
 description = "A dynamic throttle for ECS"
 authors = ["NeonD00m"]
 repository = "https://github.com/NeonD00m/jecs_std"

@@ -1,6 +1,6 @@
 name = "killergg/jecs_reverse_ref"
-version = "0.1.1"
-description = "Go from world entity to ref with this package"
+version = "0.1.2"
+description = "Reverse lookup for refs"
 authors = ["as8d"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"

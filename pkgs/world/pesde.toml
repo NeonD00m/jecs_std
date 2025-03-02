@@ -1,6 +1,6 @@
 name = "killergg/jecs_world"
-version = "0.1.1"
-description = "A jecs world made easily available for dependencies"
+version = "0.1.3"
+description = "A jecs world"
 authors = ["NeonD00m", "as8d"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
