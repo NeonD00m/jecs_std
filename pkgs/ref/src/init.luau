@@ -1,21 +1,21 @@
 --!strict
 --!optimize 2
 
-local handle = require("./roblox_packages/handle")
-local world = require("./roblox_packages/world")
-local refs = require("./roblox_packages/refs")
+local world = require("../roblox_packages/world")
+local refs = require("../roblox_packages/refs")
 
 local function ref(key)
-    if not key then
-        return handle(world:entity())
-    end
-    local e = refs[key]
-    if not e then
-        e = world:entity()
-        refs[key] = e
-    end
-    -- Cannot cache handles because they will get invalidated
-    return handle(e)
+	if not key then
+		return world:entity()
+	end
+
+	local entity = refs[key]
+	if not entity then
+		entity = world:entity()
+		refs[key] = entity
+	end
+	
+	return entity
 end
 
 return ref

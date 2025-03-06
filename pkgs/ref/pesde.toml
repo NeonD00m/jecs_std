@@ -1,6 +1,6 @@
 name = "killergg/jecs_ref"
-version = "0.1.1"
-description = "A jecs ref for easy entity-mapping and world editing"
+version = "0.2.1"
+description = "A jecs utility for easy entity-mapping"
 authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
@@ -25,7 +25,6 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.3" }
-handle = { workspace = "killergg/jecs_handle", version = "^" }
+jecs = { wally = "wally#ukendio/jecs", version = "^0.5.5" }
 world = { workspace = "killergg/jecs_world", version = "^" }
 refs = { workspace = "killergg/jecs_refs", version = "^" }

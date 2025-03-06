@@ -1,5 +1,5 @@
 name = "killergg/jecs_std"
-version = "0.1.2"
+version = "0.1.4"
 description = "A standard library for jecs"
 authors = ["NeonD00m", "as8d", "Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
@@ -26,8 +26,10 @@ rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
 jecs = { wally = "wally#ukendio/jecs", version = "^0.5.5" }
+world = { workspace = "killergg/jecs_world", version = "^", target = "roblox" }
 ref = { workspace = "killergg/jecs_ref", version = "^", target = "roblox" }
 reverseRef = { workspace = "killergg/jecs_reverse_ref", version = "^", target = "roblox" }
 throttle = { workspace = "killergg/jecs_throttle", version = "^", target = "roblox" }
 interval = { workspace = "killergg/jecs_interval", version = "^", target = "roblox" }
 collect = { workspace = "killergg/jecs_collect", version = "^", target = "roblox" }
+handle = { workspace = "killergg/jecs_handle", version = "^", target = "roblox" }
