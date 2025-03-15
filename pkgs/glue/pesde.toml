@@ -1,5 +1,5 @@
 name = "killergg/jecs_std"
-version = "0.1.4"
+version = "0.1.5"
 description = "A standard library for jecs"
 authors = ["NeonD00m", "as8d", "Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"

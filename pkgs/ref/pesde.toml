@@ -1,5 +1,5 @@
 name = "killergg/jecs_ref"
-version = "0.2.1"
+version = "0.2.2"
 description = "A jecs utility for easy entity-mapping"
 authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"

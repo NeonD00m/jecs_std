@@ -1,8 +1,8 @@
 --!strict
 --!optimize 2
 
-local world = require("../roblox_packages/world")
-local refs = require("../roblox_packages/refs")
+local world = require("./roblox_packages/world")
+local refs = require("./roblox_packages/refs")
 
 local function ref(key)
 	if not key then
