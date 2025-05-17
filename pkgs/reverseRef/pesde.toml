@@ -5,6 +5,12 @@ authors = ["as8d"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
+includes = [
+  "pesde.toml",
+  "LICENSE",
+  "src",
+]
+
 [target]
 environment = "roblox"
 lib = "src/init.luau"
@@ -12,9 +18,6 @@ build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
-
-[wally_indices]
-default = "https://github.com/UpliftGames/wally-index"
 
 [scripts]
 roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
@@ -25,4 +28,4 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-refs = { workspace = "killergg/jecs_refs", version = "^"  }
+refs = { workspace = "killergg/jecs_refs", version = "^" }

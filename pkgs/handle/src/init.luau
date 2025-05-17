@@ -1,6 +1,7 @@
 --!strict
 --!optimize 2
 
+local world = require("./roblox_packages/world")
 local jecs = require("./roblox_packages/jecs")
 type entity<T = nil> = jecs.Entity<T>
 type id<T = nil> = entity<T> | jecs.Pair<any, any>
@@ -29,7 +30,6 @@ type interface = {
 
 export type handle = typeof(setmetatable({} :: { entity: entity }, {} :: interface))
 
-local world = require("./roblox_packages/world")
 local handle = {} :: interface
 handle.__index = handle
 

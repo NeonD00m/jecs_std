@@ -1,9 +1,15 @@
 name = "killergg/jecs_collect"
-version = "0.1.1"
+version = "0.1.2"
 description = "Event collection for systems running on a per frame basis"
 authors = ["memorycode", "Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
+
+includes = [
+  "pesde.toml",
+  "LICENSE",
+  "src",
+]
 
 [target]
 environment = "roblox"

@@ -5,6 +5,12 @@ authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
+includes = [
+  "pesde.toml",
+  "LICENSE",
+  "src",
+]
+
 [target]
 environment = "roblox"
 lib = "src/init.luau"

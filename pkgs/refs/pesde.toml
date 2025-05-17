@@ -5,6 +5,12 @@ authors = ["NeonD00m"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 
+includes = [
+  "pesde.toml",
+  "LICENSE",
+  "src",
+]
+
 [target]
 environment = "roblox"
 lib = "src/init.luau"
@@ -12,9 +18,6 @@ build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
-
-[wally_indices]
-default = "https://github.com/UpliftGames/wally-index"
 
 [scripts]
 roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"

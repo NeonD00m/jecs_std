@@ -11,6 +11,9 @@ roblox = "pkgs/handle"
 [workspace."killergg/jecs_interval"]
 roblox = "pkgs/interval"
 
+[workspace."killergg/jecs_observers"]
+roblox = "pkgs/observers"
+
 [workspace."killergg/jecs_ref"]
 roblox = "pkgs/ref"
 

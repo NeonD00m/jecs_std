@@ -1,7 +1,7 @@
-name = "killergg/jecs_world"
-version = "0.1.5"
-description = "A jecs world"
-authors = ["NeonD00m", "as8d"]
+name = "killergg/jecs_observers"
+version = "0.2.0"
+description = "An official jecs addon for observing a world"
+authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
 

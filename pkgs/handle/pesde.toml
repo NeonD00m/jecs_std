@@ -1,9 +1,15 @@
 name = "killergg/jecs_handle"
-version = "0.1.2"
+version = "0.1.4"
 description = "Builder pattern for spawning entities in jecs"
 authors = ["Ukendio"]
 repository = "https://github.com/NeonD00m/jecs_std"
 license = "MIT"
+
+includes = [
+  "pesde.toml",
+  "LICENSE",
+  "src",
+]
 
 [target]
 environment = "roblox"
@@ -12,9 +18,6 @@ build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
-
-[wally_indices]
-default = "https://github.com/UpliftGames/wally-index"
 
 [scripts]
 roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
@@ -25,5 +28,5 @@ scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
 
 [dependencies]
-jecs = { wally = "wally#ukendio/jecs", version = "^0.5.5" }
+jecs = { name = "marked/jecs", version = "^0.6.0" }
 world = { workspace = "killergg/jecs_world", version = "^0.1.0" }

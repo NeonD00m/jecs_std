@@ -1,5 +1,5 @@
 name = "killergg/jecs_world"
-version = "0.1.3"
+version = "0.1.5"
 target = "roblox"
 
 [graph."0x5eal/unzip"."0.1.3 luau"]
@@ -171,6 +171,26 @@ index_url = "https://github.com/daimond113/pesde-index"
 environment = "lune"
 lib = "lib/init.luau"
 
+[graph."marked/jecs"."0.6.0 roblox"]
+direct = ["jecs", { name = "marked/jecs", version = "^0.6.0" }, "standard"]
+resolved_ty = "standard"
+
+[graph."marked/jecs"."0.6.0 roblox".target]
+environment = "roblox"
+lib = "jecs.luau"
+build_files = ["jecs.luau"]
+
+[graph."marked/jecs"."0.6.0 roblox".pkg_ref]
+ref_ty = "pesde"
+name = "marked/jecs"
+version = "0.6.0"
+index_url = "https://github.com/pesde-pkg/index"
+
+[graph."marked/jecs"."0.6.0 roblox".pkg_ref.target]
+environment = "roblox"
+lib = "jecs.luau"
+build_files = ["jecs.luau"]
+
 [graph."pesde/rojo"."7.4.4 lune"]
 direct = ["rojo", { name = "pesde/rojo", version = "^7.4.4", target = "lune" }, "dev"]
 resolved_ty = "dev"
@@ -284,18 +304,3 @@ unzip = [{ name = "0x5eal/unzip", version = "^0.1.0", index = "https://github.co
 [graph."pesde/toolchainlib"."0.1.12 lune".pkg_ref.target]
 environment = "lune"
 lib = "src/init.luau"
-
-[graph."wally#ukendio/jecs"."0.5.5 roblox"]
-direct = ["jecs", { wally = "wally#ukendio/jecs", version = "^0.5.5" }, "standard"]
-resolved_ty = "standard"
-
-[graph."wally#ukendio/jecs"."0.5.5 roblox".target]
-environment = "roblox"
-lib = "jecs.luau"
-build_files = []
-
-[graph."wally#ukendio/jecs"."0.5.5 roblox".pkg_ref]
-ref_ty = "wally"
-wally = "wally#ukendio/jecs"
-version = "0.5.5"
-index_url = "https://github.com/UpliftGames/wally-index"
